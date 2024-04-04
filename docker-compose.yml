@@ -6,6 +6,10 @@ services:
     build:
       context: ./web/
       dockerfile: ./Dockerfile
+    user: node
+    working_dir: /home/node/web
+    volumes:
+      - ./web:/home/node/web
     ports:
       - 3000:3000
     tty: true
