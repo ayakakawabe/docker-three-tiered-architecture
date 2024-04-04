@@ -9,11 +9,11 @@
     ```
     docker compose exec web bash
     ```
-    if you create a React project, run the following command.
+    If you create a React project, run the following command.
     ```
     npx create-react .
     ```
-    if you create a Vue project, run the following command
+    If you create a Vue project, run the following command
     ```
     npm create vue@latest .
     ```
