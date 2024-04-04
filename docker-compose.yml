@@ -4,7 +4,7 @@ services:
   web:
     container_name: web
     build:
-      context: ./web/
+      context: ./docker/web_context/
       dockerfile: ./Dockerfile
     user: node
     working_dir: /home/node/web
