@@ -13,3 +13,16 @@ services:
     ports:
       - 3000:3000
     tty: true
+  
+  app:
+    container_name: app
+    build:
+      context: ./docker/app_context/
+      dockerfile: ./Dockerfile
+    user: pyuser
+    working_dir: /home/pyuser/app
+    volumes:
+      - ./app:/home/pyuser/app
+    ports:
+      - 8000:8000
+    tty: true
