@@ -26,3 +26,20 @@ services:
     ports:
       - 8000:8000
     tty: true
+
+  db:
+    container_name: db
+    build:
+      context: ./docker/db_context/
+      dockerfile: ./Dockerfile
+    user: mysqluser
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: sample_db
+      MYSQL_USER: sample_user
+      MYSQL_PASSWORD: sample_user
+    volumes:
+      - ./docker/db_context/init:/docker-entrypoint-initdb.d
+    ports:
+      - 3006:3006
