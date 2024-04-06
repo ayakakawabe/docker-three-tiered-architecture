@@ -1,6 +1,6 @@
 # docker-three-tiered-architecture
 
-# Quick Start
+## Quick Start
 1. Create container
     ```
     docker compose up -d
@@ -18,12 +18,12 @@
     npm create vue@latest .
     ```
 
-# Usage
-## Database Container
-### How to initalize the database
+## Usage
+### Database Container
+#### **How to initalize the database**
 * Change SQL in `./docker/db_context/init/init.sql`.
 
-### How to manipulate the database
+#### **How to manipulate the database**
 1. Enter a database container.
     ```
     docker exec -it db bash
