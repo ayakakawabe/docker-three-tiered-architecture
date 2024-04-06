@@ -20,7 +20,7 @@
 
 ## Usage
 ### Database Container
-#### **How to initalize the database**
+#### **How to initialize the database**
 * Change SQL in `./docker/db_context/init/init.sql`.
 
 #### **How to manipulate the database**
