@@ -13,6 +13,10 @@ services:
     ports:
       - 3000:3000
     tty: true
+    depends_on:
+      - app
+    networks:
+      - client
   
   app:
     container_name: app
@@ -26,6 +30,11 @@ services:
     ports:
       - 8000:8000
     tty: true
+    depends_on:
+      - db
+    networks:
+      - client
+      - server
 
   db:
     container_name: db
@@ -43,3 +52,11 @@ services:
       - ./docker/db_context/init:/docker-entrypoint-initdb.d
     ports:
       - 3006:3006
+    networks:
+      - server
+
+networks:
+  client:
+    driver: bridge
+  server:
+    driver: bridge
