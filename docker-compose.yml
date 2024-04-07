@@ -27,6 +27,7 @@ services:
     working_dir: /home/pyuser/app
     volumes:
       - ./app:/home/pyuser/app
+    command: uvicorn api:app --host=0.0.0.0 --reload
     ports:
       - 8000:8000
     tty: true
