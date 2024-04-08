@@ -1,4 +1,8 @@
-# Docker three tiered architecture
+<h1 align="center">Docker three tiered architecture</h1>
+<div align="center">
+   <p>This is an example of a 3-tier architecture composed of docker containers.</p>
+   <img width="800" alt="スクリーンショット 2024-04-08 13 22 03" src="https://github.com/ayakakawabe/docker-three-tiered-architecture/assets/103473179/6f8373f9-baf7-46cb-aadf-4ef2423a7b04">
+</div>
 
 ## 📖 Docs
 * [🚀 Quick Start](#QuickStart)
