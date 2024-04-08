@@ -1,6 +1,14 @@
-# docker-three-tiered-architecture
+# Docker three tiered architecture
 
-## 🚀 Quick Start
+## 📖 Docs
+* [🚀 Quick Start](#QuickStart)
+* [📚 Usage](#Usage)
+    * [Web Container](#WebContainer)
+    * [App Container](#AppContainer)
+    * [Database Container](#DatabaseContainer)
+
+<h2 id="QuickStart">🚀 Quick Start</h2>
+
 1. Create container.
     ```
     docker compose up -d --build
@@ -26,9 +34,10 @@
         ```
 
 
-## 📚 Usage
+<h2 id="Usage">📚 Usage</h2>
 
-### Web Container
+<h3 id="WebContainer">Web Container</h3>
+
 * Create a React project, a Vue project, or an other project after entering the web container.
     ```
     docker compose exec web bash
@@ -42,11 +51,13 @@
     npm create vue@latest .
     ```
 
-### App Container
+<h3 id="AppContainer">App Container</h3>
+
 #### **How to install the Python packages with build the app container.**
 * Write the packages that you want to install in `./docker/app_context/requirements.txt`.
 
-### Database Container
+<h3 id="DatabaseContainer">Database Container</h3>
+
 #### **How to initialize the database**
 * Change SQL in `./docker/db_context/init/init.sql`.
 
