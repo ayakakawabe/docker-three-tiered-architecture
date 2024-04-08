@@ -28,7 +28,7 @@
     ```
 2. Run the following command
     ```
-    node app.js
+    node sample.js
     ```
 
 ### App Container
